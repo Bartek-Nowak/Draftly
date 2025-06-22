@@ -1,16 +1,36 @@
-# Tauri + Vue + TypeScript
+# ✍️ Draftly
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**Draftly** to lekki, multiplatformowy edytor Markdown w stylu MS Worda z wbudowaną kontrolą wersji. Idealny do pisania notatek, dokumentacji, blogów i wszędzie tam, gdzie liczy się historia zmian.
 
-## Recommended IDE Setup
+---
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## 🚀 Funkcje
 
-## Type Support For `.vue` Imports in TS
+- 📝 Edytor Markdown z live preview
+- 🗂️ Snapshoty wersji z historią zmian
+- 📄 Eksport do PDF (z użyciem Pandoc)
+- 💾 Otwieranie i zapisywanie plików `.md`
+- 🎨 Stylizacja jak w MS Word (nagłówki, tabele, fonty)
+- 🌗 Tryb jasny / ciemny
+- 🧠 Praca offline – działa lokalnie
+- 🔒 Twoje pliki nigdy nie trafiają do chmury
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+---
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+## 🖥️ Technologia
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+- **Frontend:** Vue 3 + ToastUI Editor
+- **Backend:** Tauri (Rust)
+- **Wersjonowanie:** Snapshot system z lokalną historią `.history/`
+- **Eksport:** `pandoc` (lokalnie)
+
+---
+
+## 📦 Instalacja
+
+> Upewnij się, że masz zainstalowanego [Node.js](https://nodejs.org/) oraz [Rust + Cargo](https://tauri.app/v1/guides/getting-started/prerequisites)
+
+```bash
+npm install
+npm run tauri dev
+```
